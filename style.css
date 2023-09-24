@@ -12,45 +12,6 @@ li{
     list-style-type: none;
 }
 
-/* nav */
-
-/* .navbar{
-    display: flex;
-    align-items: center;
-    padding: 0 50px;
-    font-size: 18px;
-    font-weight: 800;
-}
-
-.align-center{
-    align-items: center;
-}
-
-.justify-between{
-    justify-content: space-between;
-}
-
-.content-wrapper{
-    margin: 0 auto;
-    width: 100%;
-    max-width: 1200px;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.navbar .logo{
-    height: 40px;
-    width: 150px;
-}
-
-.navbar .links{
-    display: flex;
-    width: 100%;
-    max-width: 430px;
-} */
-
-/* nav */
-
 nav {
     display: flex;
     justify-content: space-between;
@@ -85,3 +46,4 @@ nav {
 .fa-adjust {
     font-size: 20px;
 }
+
