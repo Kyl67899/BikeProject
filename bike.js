@@ -24,11 +24,11 @@ async function renderBooks(filter) {
   } else if (filter === "RATING") {
     books.sort((a, b) => b.rating - a.rating);
 
-  } else if (filter === "MOUNTAIN") {
-        books.sort((a, b) => );
+  // } else if (filter === "MOUNTAIN") {
+  //       books.sort((a, b) => );
 
-  } else if (filter === "ROAD") {
-    books.sort((a, b) => );
+  // } else if (filter === "ROAD") {
+  //   books.sort((a, b) => );
   }
 
   const booksHtml = books
@@ -90,7 +90,7 @@ function getBooks() {
           {
             id: 1,
             title: "Fuel EXe 9.9 XX AXS T-Type",
-            url: "MovieWebsiteFinalProject/assets/OIP (6).jpg",
+            url: "https://media.trekbikes.com/image/upload/f_auto,fl_progressive:semi,q_auto,w_1920,h_1440,c_pad/SupercaliberSLR99XXAXS-24-41725-C-Portrait",
             type: "mountain",
             originalPrice: 13999.99,
             salePrice: null,
@@ -99,7 +99,7 @@ function getBooks() {
           {
             id: 2,
             title: "Rail 9.9 CXR Gen 4",
-            url: "/MovieWebsiteFinalProject/assets/Trek-Marlin-5-Azure-Blue--BIKEFACTORY-HAWAII-HONOLULU-WAIPIO-KAPOLEI.jpg",
+            url: "https://media.trekbikes.com/image/upload/f_auto,fl_progressive:semi,q_auto,w_1920,h_1440,c_pad/SupercaliberSLR99XXAXS-24-41725-C-Portrait",
             type: "mountain",
             originalPrice: 13499.99,
             salePrice: null,
@@ -108,7 +108,7 @@ function getBooks() {
           {
             id: 3,
             title: "Madone SLR 9 AXS Gen 7",
-            url: "",
+            url: "https://media.trekbikes.com/image/upload/f_auto,fl_progressive:semi,q_auto,w_1920,h_1440,c_pad/SupercaliberSLR99XXAXS-24-41725-C-Portrait",
             type: "Road",
             originalPrice: 13199.99,
             salePrice: 12999,
@@ -117,7 +117,7 @@ function getBooks() {
           {
             id: 4,
             title: "Domane SLR 9 AXS Gen 4",
-            url: "",
+            url: "https://media.trekbikes.com/image/upload/f_auto,fl_progressive:semi,q_auto,w_1920,h_1440,c_pad/SupercaliberSLR99XXAXS-24-41725-C-Portrait",
             type: "Road",
             originalPrice: 13199.99,
             salePrice: null,
@@ -130,7 +130,7 @@ function getBooks() {
             type: "Mountain",
             originalPrice: 11699.99,
             salePrice: null,
-            rating: null,
+            rating: 5,
           },
           {
             id: 6,
@@ -148,7 +148,7 @@ function getBooks() {
             type: "Mountain",
             originalPrice: 9999.99,
             salePrice: null,
-            rating: null,
+            rating: 4,
           },
           {
             id: 8,
@@ -157,7 +157,7 @@ function getBooks() {
             type: "Road",
             originalPrice: 9699.99,
             salePrice: null,
-            rating: null,
+            rating: 4.5,
           },
           {
             id: 9,
@@ -193,7 +193,7 @@ function getBooks() {
             type: "Mountain",
             originalPrice: 7999.99,
             salePrice: 5999.99,
-            rating: null,
+            rating: 5,
           },
           {
             id: 13,
@@ -247,7 +247,7 @@ function getBooks() {
             type: "Mountain",
             originalPrice: 11999.99,
             salePrice: 8999.99,
-            rating: null,
+            rating: 4.5,
           },
           {
             id: 19,
@@ -292,7 +292,7 @@ function getBooks() {
             type: "Mountain",
             originalPrice: 4999.99,
             salePrice: null,
-            rating: null,
+            rating: 4.2,
           },
           {
             id: 25,
