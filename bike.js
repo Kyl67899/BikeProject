@@ -90,7 +90,7 @@ function getBooks() {
           {
             id: 1,
             title: "Fuel EXe 9.9 XX AXS T-Type",
-            url: "",
+            url: "MovieWebsiteFinalProject/assets/OIP (6).jpg",
             type: "mountain",
             originalPrice: 13999.99,
             salePrice: null,
@@ -99,7 +99,7 @@ function getBooks() {
           {
             id: 2,
             title: "Rail 9.9 CXR Gen 4",
-            url: "a",
+            url: "/MovieWebsiteFinalProject/assets/Trek-Marlin-5-Azure-Blue--BIKEFACTORY-HAWAII-HONOLULU-WAIPIO-KAPOLEI.jpg",
             type: "mountain",
             originalPrice: 13499.99,
             salePrice: null,
