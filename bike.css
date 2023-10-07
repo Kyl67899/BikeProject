@@ -80,7 +80,7 @@ button:active {
 }
 
 .logo {
-  width: 160px;
+  width: 75px;
 }
 
 .nav__container {
@@ -375,7 +375,7 @@ footer {
 }
 
 .footer__logo--img {
-  width: 160px;
+  width: 90px;
   filter: grayscale(1) invert(1);
 }
 
