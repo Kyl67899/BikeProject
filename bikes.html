@@ -66,14 +66,14 @@
             <h2 class="section__title books__header--title">
               All <span class="purple">Bikes</span>
             </h2>
-            <select name="" id="filter" onchange="filterBooks(event)">
+            <select name="" id="filter" onchange="filterBike(event)">
               <option value="" disabled selected>Sort</option>
               <option value="LOW_TO_HIGH">Price, Low to High</option>
               <option value="HIGH_TO_LOW">Price, High to Low</option>
               <option value="ONSALE">On Sale</option>
               <option value="RATING">Rating</option>
-              <option value="MOUNTAIN">Mountain</option>
-              <option value="ROAD">Road</option>
+              <!-- <option value="MOUNTAIN">Mountain</option>
+              <option value="ROAD">Road</option> -->
             </select>
           </div>
           <div class="books books__loading">
@@ -88,7 +88,7 @@
       <div class="row row__column">
         <a href="#">
           <figure class="footer__logo">
-            <img src="assets/logo.jpeg" class="footer__logo--img" alt="">
+            <img src="assets/logo.jpeg" class="footer__logo--img" alt="logo">
           </figure>
         </a>
         <div class="footer__list">
