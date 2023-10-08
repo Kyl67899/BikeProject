@@ -1,64 +1,74 @@
-let books;
+let bike;
 
-async function renderBooks(filter) {
-  const booksWrapper = document.querySelector(".books");
+async function renderBike(filter) {
+  const bikeWrapper = document.querySelector(".books");
 
-  booksWrapper.classList += ' books__loading'
+  bikeWrapper.classList += ' books__loading'
 
-  if (!books) {
-    books = await getBooks();
+  if (!bike) {
+    bike = await getBikes();
   }
   
-  booksWrapper.classList.remove('books__loading')
+  bikeWrapper.classList.remove('books__loading')
 
   if (filter === "LOW_TO_HIGH") {
-    books.sort(
+    bike.sort(
       (a, b) =>
         (a.salePrice || a.originalPrice) - (b.salePrice || b.originalPrice)
     );
   } else if (filter === "HIGH_TO_LOW") {
-    books.sort(
+    bike.sort(
       (a, b) =>
         (b.salePrice || b.originalPrice) - (a.salePrice || a.originalPrice)
     );
   } else if (filter === "HIGH_TO_LOW") {
-    books.sort(
+    bike.sort(
       (a, b) =>
         (b.salePrice || b.originalPrice) - (a.salePrice || a.originalPrice)
     );
   } else if (filter === "RATING") {
-    books.sort((a, b) => b.rating - a.rating);
+    bike.sort((a, b) => b.rating - a.rating);
 
   } else if (filter === "ONSALE") {
-    books.sort((a, b) => b.rating - a.rating);
+    bike.sort((a, b) => b.salePrice - a.salePrice);
 
   // } else if (filter === "MOUNTAIN") {
-  //       books.sort((a, b) => type ===);
+  //       books.sort((a, b) => );
 
   // } else if (filter === "ROAD") {
   //   books.sort((a, b) => );
   }
 
-  const booksHtml = books
-    .map((book) => {
+  // Check to see if bike is road or mountain
+  // function checkMountainType(){
+  //   if(books.type === "mountain"){
+  //     console.log("mountain")
+  //   }
+  //   else if(books.type === "Road"){
+  //     console.log("Road")
+  //   }
+  // }
+
+  const bikesHtml = bike
+    .map((bike) => {
       return `<div class="book">
     <figure class="book__img--wrapper">
-      <img class="book__img" src="${book.url}" alt="">
+      <img class="book__img" src="${bike.url}" alt="">
     </figure>
     <div class="book__title">
-      ${book.title}
+      ${bike.title}
     </div>
     <div class="book__ratings">
-      ${ratingsHTML(book.rating)}
+      ${ratingsHTML(bike.rating)}
     </div>
     <div class="book__price">
-      ${priceHTML(book.originalPrice, book.salePrice)}
+      ${priceHTML(bike.originalPrice, bike.salePrice)}
     </div>
   </div>`;
     })
     .join("");
 
-  booksWrapper.innerHTML = booksHtml;
+  bikeWrapper.innerHTML = bikesHtml;
 }
 
 function priceHTML(originalPrice, salePrice) {
@@ -81,17 +91,17 @@ function ratingsHTML(rating) {
   return ratingHTML;
 }
 
-function filterBooks(event) {
-  renderBooks(event.target.value);
+function filterBike(event) {
+  renderBike(event.target.value);
 }
 
 setTimeout(() => {
-  renderBooks();
+  renderBike();
 });
 
 
 // fake data
-function getBooks() {
+function getBikes() {
     return new Promise((resolve) => {
       setTimeout(() => {
         resolve([
