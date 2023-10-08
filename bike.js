@@ -21,11 +21,19 @@ async function renderBooks(filter) {
       (a, b) =>
         (b.salePrice || b.originalPrice) - (a.salePrice || a.originalPrice)
     );
+  } else if (filter === "HIGH_TO_LOW") {
+    books.sort(
+      (a, b) =>
+        (b.salePrice || b.originalPrice) - (a.salePrice || a.originalPrice)
+    );
   } else if (filter === "RATING") {
     books.sort((a, b) => b.rating - a.rating);
 
+  } else if (filter === "ONSALE") {
+    books.sort((a, b) => b.rating - a.rating);
+
   // } else if (filter === "MOUNTAIN") {
-  //       books.sort((a, b) => );
+  //       books.sort((a, b) => type ===);
 
   // } else if (filter === "ROAD") {
   //   books.sort((a, b) => );
