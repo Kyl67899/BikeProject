@@ -21,16 +21,11 @@ async function renderBike(filter) {
       (a, b) =>
         (b.salePrice || b.originalPrice) - (a.salePrice || a.originalPrice)
     );
-  } else if (filter === "HIGH_TO_LOW") {
-    bike.sort(
-      (a, b) =>
-        (b.salePrice || b.originalPrice) - (a.salePrice || a.originalPrice)
-    );
-  } else if (filter === "RATING") {
-    bike.sort((a, b) => b.rating - a.rating);
+  // } else if (filter === "RATING") {
+  //   bike.sort((a, b) => b.rating - a.rating);
 
-  } else if (filter === "ONSALE") {
-    bike.sort((a, b) => b.salePrice - a.salePrice);
+  // } else if (filter === "ONSALE") {
+  //   bike.sort((a, b) => b.salePrice - a.salePrice);
 
   // } else if (filter === "MOUNTAIN") {
   //       books.sort((a, b) => );
